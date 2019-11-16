@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activity.DraftChatActivity"></activity>
+        <activity android:name=".View.Activity.DraftChatActivity" />
         <activity android:name=".View.Activity.ChatActivity" />
         <activity android:name=".View.Activity.AjukanActivity" />
         <activity android:name=".View.Activity.Kta2Activity" />
@@ -19,9 +19,7 @@
         <activity android:name=".View.Activity.DetailActivity" />
         <activity android:name=".View.Activity.KtaActivity" />
         <activity android:name=".View.Activity.DaftarActivity" />
-        <activity android:name=".View.Activity.MainActivity">
-
-        </activity>
+        <activity android:name=".View.Activity.MainActivity"></activity>
         <activity android:name=".View.Activity.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

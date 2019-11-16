@@ -1,203 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF">
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/sliderViewHome"
+        android:layout_width="350sp"
 
-        <com.smarteist.autoimageslider.SliderView
-            android:id="@+id/sliderViewHome"
-            android:layout_width="350sp"
+        android:layout_height="190sp"
+        android:layout_marginTop="60sp"
+        android:layout_marginBottom="36sp"
+        android:background="@drawable/hero"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetailTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            android:layout_height="190sp"
-            android:layout_marginTop="60sp"
-            android:layout_marginBottom="36sp"
-            android:background="@drawable/hero"
-            app:layout_constraintBottom_toTopOf="@+id/tvDetailTitle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.487"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    </com.smarteist.autoimageslider.SliderView>
 
-        </com.smarteist.autoimageslider.SliderView>
+    <Button
+        android:id="@+id/btnBanding"
+        android:layout_width="200sp"
+        android:layout_height="55sp"
+        android:background="@drawable/btn_bandingkan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAjukan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAjukan"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:id="@+id/btnBanding"
-            android:layout_width="200sp"
-            android:layout_height="55sp"
-            android:background="@drawable/btn_bandingkan"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnAjukan"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btnAjukan"
+        android:layout_width="200sp"
+        android:layout_height="55sp"
+        android:background="@drawable/btn_ajukan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBanding"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <Button
-            android:id="@+id/btnAjukan"
-            android:layout_width="200sp"
-            android:layout_height="55sp"
-            android:background="@drawable/btn_ajukan"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnBanding"
-            app:layout_constraintTop_toBottomOf="@+id/tv2"
-            app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14sp"
+        android:layout_marginTop="16sp"
+        android:text="@string/ctbc_judul"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderViewHome" />
+
+    <TextView
+        android:id="@+id/tvDetailSkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bunga_ctbc"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="32sp"
+        android:background="@drawable/line_ulasan"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="35sp"
+            android:layout_height="42sp"
+            android:layout_weight="1"
+            android:paddingTop="7sp"
+            android:paddingBottom="5sp"
+            app:srcCompat="@drawable/axa_rating" />
 
         <TextView
-            android:id="@+id/tvDetailTitle"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_width="50sp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14sp"
-            android:layout_marginTop="16sp"
-            android:text="@string/ctbc_judul"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.066"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sliderViewHome" />
+            android:layout_weight="1"
+            android:text="@string/ctbc_rating" />
 
         <TextView
-            android:id="@+id/tvDetailSkb"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_width="11sp"
             android:layout_height="wrap_content"
-            android:text="@string/bunga_ctbc"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvDetailTitle"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle" />
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:text="@string/ctbc_ulasan"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="409sp"
-            android:layout_height="50sp"
-            android:layout_marginTop="32sp"
-            android:background="@drawable/line_ulasan"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb">
+    <Button
+        android:id="@+id/button14"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="97sp"
+        android:layout_height="26sp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/btn_back"
+        app:layout_constraintBottom_toTopOf="@+id/sliderViewHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="328sp"
+        android:layout_height="27sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginBottom="152sp"
+        android:maxLines="1"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc"
+        app:layout_constraintVertical_bias="0.165" />
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="35sp"
-                android:layout_height="42sp"
-                android:layout_weight="1"
-                android:paddingTop="7sp"
-                android:paddingBottom="5sp"
-                app:srcCompat="@drawable/axa_rating" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="79sp"
+        android:layout_height="21sp"
+        android:text="Lanjut.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv11">
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/ctbc_rating" />
+    </TextView>
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="11sp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20sp"
-                android:layout_weight="1"
-                android:text="@string/ctbc_ulasan"
-                android:textColor="@color/colorPrimaryDark" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/tvDetailDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8sp"
+        android:text="Deskripsi"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-        <Button
-            android:id="@+id/button14"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="97sp"
-            android:layout_height="26sp"
-            android:layout_marginStart="24sp"
-            android:layout_marginTop="16sp"
-            android:layout_marginBottom="10sp"
-            android:background="@drawable/btn_back"
-            app:layout_constraintBottom_toTopOf="@+id/sliderViewHome"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pertahun"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailSkb"
+        app:layout_constraintTop_toTopOf="@+id/tvDetailSkb" />
 
-        <TextView
-            android:id="@+id/tv11"
-            android:layout_width="328sp"
-            android:layout_height="27sp"
-            android:layout_marginStart="8sp"
-            android:layout_marginEnd="8sp"
-            android:layout_marginBottom="152sp"
-            android:maxLines="1"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc"
-            app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jumlah_pinjaman"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailSkb"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb" />
 
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="79sp"
-            android:layout_height="21sp"
-            android:text="Lanjut.."
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv11">
+    <TextView
+        android:id="@+id/tvPembiayaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4sp"
+        android:text="@string/pembiayaan"
+        app:layout_constraintEnd_toEndOf="@+id/sliderViewHome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/tvDetailDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8sp"
-            android:text="Deskripsi"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.023"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pertahun"
-            android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/tvDetailSkb"
-            app:layout_constraintTop_toTopOf="@+id/tvDetailSkb" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/jumlah_pinjaman"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/tvDetailSkb"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb" />
-
-        <TextView
-            android:id="@+id/tvPembiayaan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4sp"
-            android:text="@string/pembiayaan"
-            app:layout_constraintEnd_toEndOf="@+id/sliderViewHome"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="@+id/textView7" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
