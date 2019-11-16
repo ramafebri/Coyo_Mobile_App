@@ -1,12 +1,12 @@
 package com.example.coyomobileapp.View.Activity;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.coyomobileapp.Model.Kta;
 import com.example.coyomobileapp.R;
@@ -41,7 +41,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             move.putExtra(Constant.Extra.DATA, dataBarang);
             startActivity(move);
         }else if(v.getId() == R.id.btnAjukan) {
-            Intent move = new Intent(DetailActivity.this, AjukanActivity.class);
+            Intent move = new Intent(DetailActivity.this, DaftarActivity.class);
             startActivity(move);
         }
     }
