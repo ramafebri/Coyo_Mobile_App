@@ -20,7 +20,7 @@ import com.smarteist.autoimageslider.SliderView;
 
 public class AjukanActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnpengajuan, btnkembali;
-    AjukanAdapter ajukanAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -27,7 +27,7 @@
 
 
             <com.smarteist.autoimageslider.SliderView
-                android:id="@+id/sliderView"
+                android:id="@+id/sliderViewHome"
                 android:layout_width="0sp"
 
                 android:layout_height="210sp"
@@ -36,6 +36,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@tools:sample/avatars" />
             </com.smarteist.autoimageslider.SliderView>
 
             <androidx.cardview.widget.CardView
@@ -49,7 +54,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.372"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/sliderView"
+                app:layout_constraintTop_toTopOf="@+id/sliderViewHome"
                 app:layout_constraintVertical_bias="0.358">
 
                 <ImageButton

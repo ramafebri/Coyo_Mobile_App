@@ -1,6 +1,5 @@
 package com.example.coyomobileapp.View.Adapter;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,13 +55,13 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
         return dataKta.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         LinearLayout linearLayout;
         TextView tvNama, tvDesc;
         ImageView imageView;
         Button btnDetails;
 
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             initView(itemView);
         }
@@ -76,7 +75,7 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
 
         }
 
-        public void bind(final Kta dataBarang, final KtaListener barangListener) {
+        void bind(final Kta dataBarang, final KtaListener barangListener) {
             tvNama.setText(dataBarang.getTitle());
             tvDesc.setText(dataBarang.getShort_desc());
             Glide.with(itemView.getContext())
