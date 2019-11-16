@@ -12,7 +12,7 @@
         android:background="#FFFFFF">
 
         <com.smarteist.autoimageslider.SliderView
-            android:id="@+id/sliderView"
+            android:id="@+id/sliderViewHome"
             android:layout_width="350sp"
 
             android:layout_height="190sp"
@@ -59,7 +59,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.066"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sliderView" />
+            app:layout_constraintTop_toBottomOf="@+id/sliderViewHome" />
 
         <TextView
             android:id="@+id/tvDetailSkb"
@@ -121,7 +121,7 @@
             android:layout_marginTop="16sp"
             android:layout_marginBottom="10sp"
             android:background="@drawable/btn_back"
-            app:layout_constraintBottom_toTopOf="@+id/sliderView"
+            app:layout_constraintBottom_toTopOf="@+id/sliderViewHome"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -193,7 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4sp"
             android:text="@string/pembiayaan"
-            app:layout_constraintEnd_toEndOf="@+id/sliderView"
+            app:layout_constraintEnd_toEndOf="@+id/sliderViewHome"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView7"
             app:layout_constraintTop_toTopOf="@+id/textView7" />

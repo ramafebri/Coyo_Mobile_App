@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:text="Nomor Telepon"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/nomor_tajukan"
+            app:layout_constraintBottom_toTopOf="@+id/nomor_ajukan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.085"
             app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +106,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/nomor_tajukan"
+            android:id="@+id/nomor_ajukan"
             android:layout_width="355dp"
             android:layout_height="35dp"
             android:layout_marginTop="24dp"
@@ -123,7 +123,7 @@
             android:layout_height="35dp"
             android:background="@drawable/text_box"
             android:ems="10"
-            app:layout_constraintEnd_toEndOf="@+id/nomor_tajukan"
+            app:layout_constraintEnd_toEndOf="@+id/nomor_ajukan"
             app:layout_constraintStart_toEndOf="@+id/tempat_ajukan"
             app:layout_constraintTop_toTopOf="@+id/tempat_ajukan" />
 
@@ -133,19 +133,19 @@
             android:layout_height="wrap_content"
             android:text="Tempat Tanggal Lahir"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/nomor_tajukan"
+            app:layout_constraintEnd_toEndOf="@+id/nomor_ajukan"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/nomor_tajukan"
-            app:layout_constraintTop_toBottomOf="@+id/nomor_tajukan" />
+            app:layout_constraintStart_toStartOf="@+id/nomor_ajukan"
+            app:layout_constraintTop_toBottomOf="@+id/nomor_ajukan" />
 
-        <TextView
+        <EditText
             android:id="@+id/tempat_ajukan"
             android:layout_width="192sp"
             android:layout_height="35sp"
             android:layout_marginTop="8dp"
             android:background="@drawable/text_box"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/nomor_tajukan"
+            app:layout_constraintStart_toStartOf="@+id/nomor_ajukan"
             app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
         <TextView

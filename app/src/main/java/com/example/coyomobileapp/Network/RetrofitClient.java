@@ -27,15 +27,17 @@ public class RetrofitClient {
 
     private Retrofit getRetrofit(){
 
-        final OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .readTimeout(15, TimeUnit.SECONDS)
-                .connectTimeout(15, TimeUnit.SECONDS)
-                .build();
+//        final OkHttpClient okHttpClient = new OkHttpClient.Builder()
+//                .readTimeout(15, TimeUnit.SECONDS)
+//                .connectTimeout(15, TimeUnit.SECONDS)
+//                .build();
+
+        OkHttpClient okHttpClient = UnsafeOkHttpClient.getUnsafeOkHttpClient();
 
         return new Retrofit.Builder()
                 .baseUrl(Constant.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
 }
