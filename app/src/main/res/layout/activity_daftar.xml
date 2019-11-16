@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.908" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonKembali"
         android:layout_width="97dp"
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
@@ -59,10 +59,10 @@
         app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/borderlessButtonStyle" />/>
+        style="?android:attr/borderlessButtonStyle" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonKeLogin1"
         android:layout_width="180dp"
         android:layout_height="19dp"
         android:layout_marginTop="8dp"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.987" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -92,7 +92,7 @@
         android:hint="@string/email"/>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -109,7 +109,7 @@
         android:hint="@string/pass"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edtConPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
