@@ -53,16 +53,8 @@
                     android:layout_marginStart="10sp"
                     android:layout_marginTop="30sp"
                     android:layout_weight="1"
-                    android:text="@string/ctbc_judul" />
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="50sp"
-                    android:layout_height="15sp"
-                    android:layout_marginTop="70sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_weight="1"
-                    android:src="@drawable/btn_diajukan" />
+                    android:text="Kartu Kredit" />
+                
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
