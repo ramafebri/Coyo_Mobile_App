@@ -1,8 +1,10 @@
-package com.example.coyomobileapp;
+package com.example.coyomobileapp.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.coyomobileapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
