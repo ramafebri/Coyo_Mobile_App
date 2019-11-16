@@ -8,8 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-    tools:context=".View.Activity.DetailActivity"
+        android:layout_height="600sp"
     android:background="#FFFFFF">
 
     <com.smarteist.autoimageslider.SliderView
@@ -17,8 +16,8 @@
         android:layout_width="350sp"
 
         android:layout_height="190sp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="60sp"
+        android:layout_marginBottom="36sp"
         android:background="@drawable/hero"
         app:layout_constraintBottom_toTopOf="@+id/tvDetailTitle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,34 +30,34 @@
         <Button
             android:id="@+id/btnBanding"
             android:layout_width="205sp"
-            android:layout_height="50sp"
+            android:layout_height="60sp"
             android:background="@drawable/btn_bandingkan"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnAjukan"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btnAjukan"
             android:layout_width="207sp"
-            android:layout_height="50sp"
+            android:layout_height="60sp"
+            android:layout_marginStart="205sp"
             android:background="@drawable/btn_ajukan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnBanding" />
+            app:layout_constraintStart_toStartOf="@+id/btnBanding" />
 
-    <TextView
-        android:id="@+id/tvDetailTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/ctbc_judul"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sliderView" />
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:layout_marginTop="16sp"
+            android:text="@string/ctbc_judul"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sliderView" />
 
     <TextView
         android:id="@+id/tvDetailSkb"
@@ -71,49 +70,49 @@
         app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle"
         android:textSize="12sp"/>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="409sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="32sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="25sp"
-            android:layout_height="40sp"
-            android:layout_marginStart="2sp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/axa_rating" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="4sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/axa_rating" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="50sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/ctbc_ulasan" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ctbc_ulasan" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="11dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/ctbc_ulasan"
-            android:textColor="@color/colorPrimaryDark" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="11sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ctbc_ulasan"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
 
     <Button
         android:id="@+id/button14"
         android:layout_width="97sp"
         android:layout_height="26sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="10sp"
         android:background="@drawable/btn_back"
         app:layout_constraintBottom_toTopOf="@+id/sliderView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,38 +120,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        style="?android:attr/borderlessButtonStyle" /><![CDATA[/>
+        style="?android:attr/borderlessButtonStyle" />
 
-
-
-
-
-    ]]>
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="348dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="152dp"
-        android:maxLines="1"
-        android:text="@string/desc_ctbc_long"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="348sp"
+            android:layout_height="29sp"
+            android:layout_marginStart="8sp"
+            android:layout_marginBottom="152sp"
+            android:maxLines="1"
+            android:text="@string/desc_ctbc_long"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="79dp"
-            android:layout_height="21dp"
+            android:layout_width="79sp"
+            android:layout_height="21sp"
             android:text="Lanjut.."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv1">
+            app:layout_constraintTop_toBottomOf="@+id/tv11">
 
         </TextView>
 
@@ -161,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25sp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="8sp"
         android:text="Deskripsi"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -188,16 +181,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb"
         android:textSize="12sp"/>
 
-    <TextView
-        android:id="@+id/tvPembiayaan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="@string/pembiayaan"
-        app:layout_constraintEnd_toEndOf="@+id/sliderView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+        <TextView
+            android:id="@+id/tvPembiayaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4sp"
+            android:text="@string/pembiayaan"
+            app:layout_constraintEnd_toEndOf="@+id/sliderView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

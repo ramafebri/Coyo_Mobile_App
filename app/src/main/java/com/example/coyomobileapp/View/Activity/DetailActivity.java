@@ -14,6 +14,7 @@ import com.example.coyomobileapp.Utils.Constant;
 
 public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvDetailTitle, tvDetailDesc;
+    TextView tv1, tv2;
     Button btnBanding, btnAjukan;
     Kta dataBarang;
     @Override
@@ -22,16 +23,18 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_detail);
 
         tvDetailTitle = findViewById(R.id.tvDetailTitle);
-        tvDetailDesc = findViewById(R.id.tvDetailDesc);
         btnAjukan = findViewById(R.id.btnAjukan);
         btnBanding = findViewById(R.id.btnBanding);
         btnBanding.setOnClickListener(this);
         btnAjukan.setOnClickListener(this);
-
+        tv1 = findViewById(R.id.tv11);
+        tv2 = findViewById(R.id.tv2);
         dataBarang = getIntent().getParcelableExtra(Constant.Extra.DATA);
         assert dataBarang != null;
         tvDetailTitle.setText(dataBarang.getTitle());
-        tvDetailDesc.setText(dataBarang.getShort_desc());
+        tv1.setText(dataBarang.getShort_desc());
+
+
     }
 
     @Override
@@ -43,6 +46,10 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         }else if(v.getId() == R.id.btnAjukan) {
             Intent move = new Intent(DetailActivity.this, AjukanActivity.class);
             startActivity(move);
+        }else if(v.getId() == R.id.tv2){
+            tv2.setVisibility(View.GONE);
+            tv1.setMaxLines(Integer.MAX_VALUE);
         }
     }
+
 }

@@ -12,7 +12,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp">
+            android:layout_height="500sp">
 
             <TextView
                 android:id="@+id/textView3"
@@ -28,9 +28,9 @@
 
             <com.smarteist.autoimageslider.SliderView
                 android:id="@+id/sliderView"
-                android:layout_width="0dp"
+                android:layout_width="0sp"
 
-                android:layout_height="212dp"
+                android:layout_height="210sp"
                 android:background="@drawable/hero"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -40,10 +40,11 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_margin="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:layout_margin="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.372"
@@ -55,7 +56,7 @@
                     android:id="@+id/imageButton2"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:layout_marginStart="300dp"
+                    android:layout_marginStart="300sp"
                     android:src="@drawable/btn_search" />
 
                 <TextView
@@ -80,18 +81,17 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="32dp"
+                android:layout_width="165sp"
+                android:layout_height="90sp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/card_kesehatan"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <ImageButton
                 android:id="@+id/imagebtnKTA"
-                android:layout_width="165dp"
-                android:layout_height="90dp"
+                android:layout_width="165sp"
+                android:layout_height="90sp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/card_kreditagunan"
