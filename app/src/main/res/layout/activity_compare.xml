@@ -434,6 +434,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -452,15 +453,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10sp"
                         android:layout_marginRight="16dp"
-                        android:text=""
+                        android:text="Rp.2,50juta"
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="120sp"
                         android:layout_weight="1"
-                        android:text=""
+                        android:text="Rp.3juta"
                         android:textSize="12sp" />
                 </TableRow>
 
@@ -493,15 +494,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10sp"
                         android:layout_marginRight="16dp"
-                        android:text=""
+                        android:text="21 Tahun"
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="120sp"
                         android:layout_weight="1"
-                        android:text=""
+                        android:text="21 Tahun"
                         android:textSize="12sp" />
                 </TableRow>
 
@@ -526,15 +527,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10sp"
                         android:layout_marginRight="16dp"
-                        android:text=" "
+                        android:text="55 Tahun "
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="120sp"
                         android:layout_weight="1"
-                        android:text=""
+                        android:text="55 Tahun"
                         android:textSize="12sp" />
 
 
@@ -561,15 +562,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10sp"
                         android:layout_marginRight="16dp"
-                        android:text=""
+                        android:text="Karyawan\nwiraswasta\nProfesional"
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="40sp"
+                        android:layout_marginStart="120sp"
                         android:layout_weight="1"
-                        android:text=""
+                        android:text="WNI/KITAS\nKaryawan\nwiraswasta\nProfesional"
                         android:textSize="12sp" />
                 </TableRow>
 
