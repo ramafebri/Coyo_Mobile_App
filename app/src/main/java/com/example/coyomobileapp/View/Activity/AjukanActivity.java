@@ -128,7 +128,7 @@ public class AjukanActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void successAddPengajuan() {
         Toast.makeText(this, "Berhasil Menambahkan Data Barang", Toast.LENGTH_SHORT).show();
-        Intent home = new Intent(AjukanActivity.this, StartActivity.class);
+        Intent home = new Intent(AjukanActivity.this, MainActivity.class);
         startActivity(home);
         finish();
 
