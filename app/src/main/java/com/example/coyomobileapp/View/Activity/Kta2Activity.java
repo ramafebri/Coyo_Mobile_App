@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.coyomobileapp.R;
 
-public class CompareActivity extends AppCompatActivity {
+public class Kta2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_compare);
+        setContentView(R.layout.activity_kta2);
     }
 }
