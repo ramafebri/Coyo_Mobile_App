@@ -21,28 +21,28 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-//        tvDetailTitle = findViewById(R.id.tvDetailTitle);
-//        tvDetailDesc = findViewById(R.id.tvDetailDesc);
-//        btnAjukan = findViewById(R.id.btnAjukan);
-//        btnBanding = findViewById(R.id.btnBanding);
+        tvDetailTitle = findViewById(R.id.tvDetailTitle);
+        tvDetailDesc = findViewById(R.id.tvDetailDesc);
+        btnAjukan = findViewById(R.id.btnAjukan);
+        btnBanding = findViewById(R.id.btnBanding);
         btnBanding.setOnClickListener(this);
         btnAjukan.setOnClickListener(this);
 
         dataBarang = getIntent().getParcelableExtra(Constant.Extra.DATA);
         assert dataBarang != null;
-//        tvDetailTitle.setText(dataBarang.getNama());
-//        tvDetailDesc.setText(dataBarang.getHarga());
+        tvDetailTitle.setText(dataBarang.getTitle());
+        tvDetailDesc.setText(dataBarang.getShort_desc());
     }
 
     @Override
     public void onClick(View v) {
-//        if (v.getId() == R.id.btnBanding){
-//            Intent move = new Intent(DetailActivity.this, Kta2Activity.class);
-//            move.putExtra(Constant.Extra.DATA, dataBarang);
-//            startActivity(move);
-//        }else if(v.getId() == R.id.btnAjukan) {
-//            Intent move = new Intent(DetailActivity.this, DaftarActivity.class);
-//            startActivity(move);
-//        }
+        if (v.getId() == R.id.btnBanding){
+            Intent move = new Intent(DetailActivity.this, Kta2Activity.class);
+            move.putExtra(Constant.Extra.DATA, dataBarang);
+            startActivity(move);
+        }else if(v.getId() == R.id.btnAjukan) {
+            Intent move = new Intent(DetailActivity.this, DaftarActivity.class);
+            startActivity(move);
+        }
     }
 }
