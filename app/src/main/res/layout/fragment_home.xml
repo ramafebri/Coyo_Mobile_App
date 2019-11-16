@@ -41,31 +41,30 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
                 android:layout_width="350dp"
-                android:layout_height="65dp"
+                android:layout_height="50dp"
                 android:layout_margin="16dp"
-                android:layout_marginTop="332dp"
                 android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.524"
+                app:layout_constraintHorizontal_bias="0.372"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/sliderView"
-                app:layout_constraintVertical_bias="0.3">
+                app:layout_constraintVertical_bias="0.358">
 
                 <ImageButton
                     android:id="@+id/imageButton2"
-                    android:layout_width="79dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="270dp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="300dp"
                     android:src="@drawable/btn_search" />
 
                 <TextView
                     android:layout_width="209dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="15dp"
                     android:text="Cari kebutuhan anda"
-                    android:textSize="20sp" />
+                    android:textSize="15sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -81,8 +80,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="170dp"
-                android:layout_height="115dp"
+                android:layout_width="165dp"
+                android:layout_height="90dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/card_kesehatan"
@@ -91,8 +90,8 @@
 
             <ImageButton
                 android:id="@+id/imagebtnKTA"
-                android:layout_width="170dp"
-                android:layout_height="115dp"
+                android:layout_width="165dp"
+                android:layout_height="90dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/card_kredit"
@@ -105,8 +104,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="170sp"
-                android:layout_height="115sp"
+                android:layout_width="165sp"
+                android:layout_height="90sp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/card_asuransi_properti"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton3"
@@ -115,9 +114,9 @@
 
             <ImageButton
                 android:id="@+id/imageButton8"
-                android:layout_width="170sp"
-                android:layout_height="115sp"
-                android:layout_marginTop="4dp"
+                android:layout_width="165sp"
+                android:layout_height="90sp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/card_kredit"
                 app:layout_constraintEnd_toEndOf="@+id/imagebtnKTA"
                 app:layout_constraintStart_toStartOf="@+id/imagebtnKTA"
@@ -125,8 +124,9 @@
 
             <ImageButton
                 android:id="@+id/imageButton9"
-                android:layout_width="170sp"
-                android:layout_height="115sp"
+                android:layout_width="165sp"
+                android:layout_height="90sp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/card_asuransi_perjalanan"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton6"
@@ -136,15 +136,16 @@
 
             <ImageButton
                 android:id="@+id/imageButton11"
-                android:layout_width="170sp"
-                android:layout_height="115sp"
-                android:layout_marginTop="12dp"
+                android:layout_width="165sp"
+                android:layout_height="90sp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/card_swalayan"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton8"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/imageButton8"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
