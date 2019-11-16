@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1045015937427",
+    "firebase_url": "https://coyomobileapp.firebaseio.com",
+    "project_id": "coyomobileapp",
+    "storage_bucket": "coyomobileapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045015937427:android:f3232ad3a7638f39f1a866",
+        "android_client_info": {
+          "package_name": "com.example.coyomobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045015937427-3k3qj7v224v7ndgoterkfi03d2q2m381.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coyomobileapp",
+            "certificate_hash": "c4fc7cd0357f03145d0cc293c9aade638eb896b7"
+          }
+        },
+        {
+          "client_id": "1045015937427-u9km6jikpci0iabe55n2q5f7nfhm0bpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvGUnkW05n6WYjC7lhjdeknBAQ-yK2iZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045015937427-u9km6jikpci0iabe55n2q5f7nfhm0bpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
