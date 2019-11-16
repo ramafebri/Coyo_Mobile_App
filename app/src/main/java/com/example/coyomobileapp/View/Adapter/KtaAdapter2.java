@@ -62,15 +62,15 @@ public class KtaAdapter2 extends RecyclerView.Adapter<KtaAdapter2.ViewHolder> {
         }
 
         private void initView(View itemView) {
-            linearLayout = itemView.findViewById(R.id.linear_item2);
-            tvNama = itemView.findViewById(R.id.kta_title1);
-            tvHarga = itemView.findViewById(R.id.kta_description1);
+//            linearLayout = itemView.findViewById(R.id.linear_item2);
+//            tvNama = itemView.findViewById(R.id.kta_title1);
+//            tvHarga = itemView.findViewById(R.id.kta_description1);
             //tvStok = itemView.findViewById(R.id.tvStok);
         }
 
         public void bind(final Kta dataBarang, final KtaListener barangListener) {
-            tvNama.setText(dataBarang.getTitle());
-            tvHarga.setText(dataBarang.getShort_desc());
+//            tvNama.setText(dataBarang.getNama());
+//            tvHarga.setText(dataBarang.getHarga());
             //tvStok.setText(dataBarang.getStok());
 
             linearLayout.setOnClickListener(v -> barangListener.onBarangClick(dataBarang));
