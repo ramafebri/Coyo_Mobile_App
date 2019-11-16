@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,9 +21,9 @@ import com.smarteist.autoimageslider.SliderView;
 
 public class AjukanActivity extends AppCompatActivity implements View.OnClickListener, AjukanView {
     Button btnpengajuan, btnkembali;
-    AjukanAdapter ajukanAdapter;
     AjukanViewModel ajukanViewModel;
-    EditText etNama, etTempatLahir,etTelepon, etTanggalLahir, etDomisili, etAjuanKta, etJumlahPinjam, etPenghasilan;
+    TextView tvNama;
+    EditText etNama, etTempatLahir,etTelepon, etTanggalLahir, etDomisili, etJumlahPinjam, etPenghasilan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,6 @@ public class AjukanActivity extends AppCompatActivity implements View.OnClickLis
         initViewModel();
         initSlider();
         initView();
-
-
     }
 
     private void initView(){
@@ -41,10 +40,9 @@ public class AjukanActivity extends AppCompatActivity implements View.OnClickLis
         etTempatLahir = findViewById(R.id.tempat_ajukan);
         etTanggalLahir = findViewById(R.id.ttl_ajukan);
         etDomisili = findViewById(R.id.kota_ajukan);
-        etAjuanKta = findViewById(R.id.nama_ajukan);
         etJumlahPinjam = findViewById(R.id.jmlpinjaman_ajukan);
         etPenghasilan = findViewById(R.id.penghasilan_ajukan);
-
+        tvNama = findViewById(R.id.textView14);
         btnkembali = findViewById(R.id.buttonBack);
         btnpengajuan = findViewById(R.id.buttonPengajuan);
         btnkembali.setOnClickListener(this);
@@ -111,7 +109,7 @@ public class AjukanActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public String getAjuanKTA() {
-        return etDomisili.getText().toString();
+        return tvNama.getText().toString();
     }
 
     @Override
