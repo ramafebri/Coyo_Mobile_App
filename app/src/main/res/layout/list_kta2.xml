@@ -51,7 +51,7 @@
                 android:layout_marginBottom="4dp"
                 android:fontFamily="sans-serif-medium"
                 android:maxLines="1"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 tools:text="@string/title_kta" />
 
@@ -63,7 +63,7 @@
                 android:maxLines="2"
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:text="@string/description_asuransi" />
             <LinearLayout
                 android:layout_width="match_parent"

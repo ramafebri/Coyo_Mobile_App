@@ -122,7 +122,7 @@
         android:layout_height="29dp"
         android:layout_marginBottom="152dp"
         android:maxLines="1"
-        android:text="Butuh dana pinjaman? KTA Dana Cinta dari Bank CTBC memberikan anda \n pinjaman dengan proses cepat, angsuran tetap, dan suku bunga rendah. \n Dengan nilai pinjaman hingga Rp200 juta, KTA Dana cinta cocok untuk keperluan bisnis anda."
+        android:text="@string/desc_ctbc_long"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.317"
