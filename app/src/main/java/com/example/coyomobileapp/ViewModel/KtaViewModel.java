@@ -33,12 +33,14 @@ public class KtaViewModel {
                 .enqueue(new Callback<JsonObject>() {
                     @Override
                     public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
+
                         if (response.isSuccessful()){
                             JsonObject body = response.body();
+                            System.out.println(body);
                             assert body != null;
-                            JsonArray array = body.getAsJsonArray();
+                            JsonArray array = body.get("data").getAsJsonArray();
                             Type type = new TypeToken<List<Kta>>(){}.getType();
-                            List<Kta> dataBarangs = new Gson().fromJson(array, type);
+                            List<Kta> dataBarangs = new Gson().fromJson(array   , type);
                             homeView.successShowBarang(dataBarangs);
                             assert response.body() != null;
                             Log.e(tag, response.body().toString());
