@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">Coyo Mobile App</string>
+
+    <string name="app_name">coyocoba</string>
+    <string name="email">Masukan Email Anda</string>
+    <string name="pass">Masukan sandi Anda</string>
+    <string name="pass2">Konfirmasi sandi Anda</string>
+    <string name="ctbc_judul">CTBC Bank KTA Dana Cinta</string>
+    <string name="dbs_judul">AXA SmartCare Executive</string>
+    <string name="Commonwealth_judul">Commonwealth BizLoan</string>
+    <string name="KTAKEB_judul">KTA KEB Hana Bank</string>
+    <string name="bunga_ctbc">15,48%\n Jumlah Pinjaman : hingga Rp200 juta</string>
+    <string name="bunga_dbs">Rekanan Rumah sakit : 490\nWaktu Tunggu : 40 Hari</string>
+    <string name="rekanan_simasnte">Rekanan Rumah sakit : 500\n Tunggu : 15 Hari</string>
+    <string name="erkanan_lippo">Rekanan Rumah sakit : 500\n Tunggu : 15 Hari</string>
+    <string name="desc_axa">AXA SmartCare Executive\n AXA menjamin biaya rawat inap, biaya kamar dan makan, ICU, dokter bedah, dan biaya lainnya untuk para karyawan Anda dan juga anggota keluarga mereka.</string>
+    <string name="title_activity_bottom">bottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_history">History</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_kta">CTBC Bank KTA Dana Cinta</string>
+    <string name="description_asuransi">15,48%\n Jumlah Pinjaman : hingga Rp200 juta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_drawer">drawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="axa_ulasan">49 Ulasan</string>
+    <string name="axa_rating">Sangat Bagus</string>
 </resources>
