@@ -1,16 +1,15 @@
 package com.example.coyomobileapp.View.Activity;
 
-import androidx.annotation.NonNull;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.example.coyomobileapp.View.Fragment.HomeFragment;
 import com.example.coyomobileapp.R;
+import com.example.coyomobileapp.View.Fragment.ChatFragment;
+import com.example.coyomobileapp.View.Fragment.HistoryFragment;
+import com.example.coyomobileapp.View.Fragment.HomeFragment;
+import com.example.coyomobileapp.View.Fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,46 +28,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+            = item -> {
+                Fragment fragment;
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment;
-            Intent favorite;
-
-            switch (item.getItemId()) {
-                case R.id.nav_home:
-                    fragment = new HomeFragment();
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
-                            .commit();
-                    return true;
-                    /*
-                case R.id.nav_history:
-                    fragment = new TvShowFragment();
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
-                            .commit();
-                    return true;
+                switch (item.getItemId()) {
+                    case R.id.nav_home:
+                        fragment = new HomeFragment();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
+                                .commit();
+                        return true;
 
                     case R.id.nav_chat:
-                    fragment = new TvShowFragment();
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
-                            .commit();
-                    return true;
+                        fragment = new ChatFragment();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
+                                .commit();
+                        return true;
+                        case R.id.nav_history:
+                        fragment = new HistoryFragment();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
+                                .commit();
+                        return true;
 
-                    case R.id.nav_profile:
-                    fragment = new TvShowFragment();
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
-                            .commit();
-                    return true;
-
-                     */
-
-            }
-            return false;
-        }
-    };
+                        case R.id.nav_profile:
+                        fragment = new ProfileFragment();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
+                                .commit();
+                        return true;
+                }
+                return false;
+            };
 }
