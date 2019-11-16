@@ -9,7 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.coyomobileapp.HomeFragment;
+import com.example.coyomobileapp.View.Fragment.HomeFragment;
 import com.example.coyomobileapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -26,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             navView.setSelectedItemId(R.id.nav_home);
         }
-    }
-
-    public static Intent fillDetail(Context context) {
-        Intent intent = new Intent(context, MainActivity.class);
-        return intent;
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
