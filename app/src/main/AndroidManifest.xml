@@ -10,12 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activity.DetailActivity"></activity>
+        <activity android:name=".View.Activity.Kta2Activity"></activity>
+        <activity android:name=".View.Activity.CompareActivity" />
+        <activity android:name=".View.Activity.DetailActivity" />
         <activity android:name=".View.Activity.KtaActivity" />
         <activity android:name=".View.Activity.DaftarActivity" />
-        <activity android:name=".View.Activity.MainActivity">
-
-        </activity>
+        <activity android:name=".View.Activity.MainActivity"></activity>
         <activity android:name=".View.Activity.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
