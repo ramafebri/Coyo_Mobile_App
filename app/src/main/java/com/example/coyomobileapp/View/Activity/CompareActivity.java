@@ -81,10 +81,10 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         assert data1 != null;
         Glide.with(this)
                 .load(data1.getIcon())
-                .apply(new RequestOptions().override(55, 55))
+                .apply(new RequestOptions().override(30, 30))
                 .into(imageView2);
         kta1title.setText(data1.getTitle());
-        skb1.setText(data1.getShort_desc());
+        skb1.setText(data1.getSuku_bunga());
         biayaproses1.setText(data1.getBiaya_proses());
         biayaadmin1.setText(data1.getBiaya_admin());
         biayaasuransi1.setText(data1.getBiaya_asuransi());
@@ -95,8 +95,8 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         keterlambatan1.setText(data1.getBiaya_keterlambatan());
         minimumpendapatan1.setText(String.valueOf(data1.getMinimum_pedapatan()));
 
-        usiamin1.setText(data1.getUsia_minimum());
-        usiamax1.setText(data1.getUsia_maksimum());
+        usiamin1.setText(String.valueOf(data1.getUsia_minimum()));
+        usiamax1.setText(String.valueOf(data1.getUsia_maksimum()));
         pendaftar1.setText(data1.getPendaftar());
     }
 
@@ -105,10 +105,10 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         assert data2 != null;
         Glide.with(this)
                 .load(data2.getIcon())
-                .apply(new RequestOptions().override(55, 55))
+                .apply(new RequestOptions().override(30, 30))
                 .into(imageView3);
         kta2title.setText(data2.getTitle());
-        skb2.setText(data2.getShort_desc());
+        skb2.setText(data2.getSuku_bunga());
         biayaproses2.setText(data2.getBiaya_proses());
         biayaadmin2.setText(data2.getBiaya_admin());
         biayaasuransi2.setText(data2.getBiaya_asuransi());
@@ -119,8 +119,8 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         keterlambatan2.setText(data2.getBiaya_keterlambatan());
         minimumpendapatan2.setText(String.valueOf(data2.getMinimum_pedapatan()));
 
-        usiamin2.setText(data2.getUsia_minimum());
-        usiamax2.setText(data2.getUsia_maksimum());
+        usiamin2.setText(String.valueOf(data2.getUsia_minimum()));
+        usiamax2.setText(String.valueOf(data2.getUsia_maksimum()));
         pendaftar2.setText(data2.getPendaftar());
     }
 
