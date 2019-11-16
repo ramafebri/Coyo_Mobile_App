@@ -71,7 +71,7 @@ public class DaftarActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         int i = v.getId();
-        if (i == R.id.btnKembali) {
+        if (i == R.id.buttonKembali) {
             Intent move = new Intent(DaftarActivity.this, StartActivity.class);
             startActivity(move);
             finish();
