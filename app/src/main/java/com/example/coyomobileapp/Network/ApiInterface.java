@@ -26,11 +26,16 @@ public interface ApiInterface {
     );
 
     @FormUrlEncoded
-    @POST("Food")
-    Call<JSONObject> addBarang(
+    @POST("pengajuan/add")
+    Call<JSONObject> addPengajuan(
             @Field("nama") String nama,
-            @Field("harga") String harga,
-            @Field("stok") String stok
+            @Field("tempat_lahir") String tempatLahir,
+            @Field("tanggal_lahir") String tglLahir,
+            @Field("kota_domisili") String domisili,
+            @Field("id_nasabah") Integer id_nasabah,
+            @Field("ajuan_kta") String ajuanKta,
+            @Field("jumlah_pinjaman") String jumlahPinjaman
+
     );
 
     @FormUrlEncoded
