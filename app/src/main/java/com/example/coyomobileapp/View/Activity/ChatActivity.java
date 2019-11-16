@@ -112,10 +112,10 @@ public class ChatActivity extends AppCompatActivity {
 
     public void addMessageBox(String message, int type){
         TextView textView = new TextView(ChatActivity.this);
-        textView.setText(message);
+        textView.setText("     "+message);
 
         LinearLayout.LayoutParams lp2 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        lp2.weight = 7.0f;
+        //lp2.weight = 7.0f;
 
         if(type == 1) {
             lp2.gravity = Gravity.START;

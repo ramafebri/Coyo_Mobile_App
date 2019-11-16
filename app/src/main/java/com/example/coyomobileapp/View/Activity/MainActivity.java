@@ -43,10 +43,8 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.nav_chat:
-                        fragment = new ChatFragment();
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
-                                .commit();
+                        Intent move = new Intent(MainActivity.this, DraftChatActivity.class);
+                        startActivity(move);
                         return true;
                         case R.id.nav_history:
                         fragment = new HistoryFragment();
