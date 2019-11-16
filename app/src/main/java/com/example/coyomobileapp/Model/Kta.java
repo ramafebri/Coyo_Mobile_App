@@ -10,87 +10,30 @@ public class Kta implements Parcelable {
     @SerializedName("id")
     @Expose
     private Integer id;
-    @SerializedName("nama")
+
+    @SerializedName("title")
     @Expose
-    private String nama;
-    @SerializedName("harga")
+    private String title;
+
+    @SerializedName("icon")
     @Expose
-    private String harga;
-    @SerializedName("stok")
+    private String icon;
+
+    @SerializedName("short_description")
     @Expose
-    private String stok;
+    private String short_desc;
 
-    public Integer getId() {
-        return id;
-    }
+    @SerializedName("pembiayaan")
+    @Expose
+    private String pembiayaan;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    @SerializedName("tenor")
+    @Expose
+    private String tenor;
 
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public String getHarga() {
-        return harga;
-    }
-
-    public void setHarga(String harga) {
-        this.harga = harga;
-    }
-
-    public String getStok() {
-        return stok;
-    }
-
-    public void setStok(String stok) {
-        this.stok = stok;
-    }
+    @SerializedName("short_description")
+    @Expose
+    private String short_desc;
 
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        if (id == null) {
-            dest.writeByte((byte) 0);
-        } else {
-            dest.writeByte((byte) 1);
-            dest.writeInt(id);
-        }
-        dest.writeString(nama);
-        dest.writeString(harga);
-        dest.writeString(stok);
-    }
-
-    protected Kta(Parcel in) {
-        if (in.readByte() == 0) {
-            id = null;
-        } else {
-            id = in.readInt();
-        }
-        nama = in.readString();
-        harga = in.readString();
-        stok = in.readString();
-    }
-
-    public static final Creator<Kta> CREATOR = new Creator<Kta>() {
-        @Override
-        public Kta createFromParcel(Parcel in) {
-            return new Kta(in);
-        }
-
-        @Override
-        public Kta[] newArray(int size) {
-            return new Kta[size];
-        }
-    };
-}
