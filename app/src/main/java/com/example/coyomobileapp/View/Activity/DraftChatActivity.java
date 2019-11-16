@@ -65,11 +65,15 @@ public class DraftChatActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         if (v.getId() == R.id.btn_chat_asuransi){
             UserDetails.chatWith = al.get(1);
-            startActivity(new Intent(DraftChatActivity.this, ChatActivity.class));
+            Intent move = new Intent(DraftChatActivity.this, ChatActivity.class);
+            move.putExtra(ChatActivity.DATA, "Asuransi");
+            startActivity(move);
         }
         else if (v.getId() == R.id.btn_chat_kredit){
             UserDetails.chatWith = al.get(3);
-            startActivity(new Intent(DraftChatActivity.this, ChatActivity.class));
+            Intent move = new Intent(DraftChatActivity.this, ChatActivity.class);
+            move.putExtra(ChatActivity.DATA, "Kredit");
+            startActivity(move);
         }
     }
 

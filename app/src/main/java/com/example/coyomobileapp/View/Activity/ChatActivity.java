@@ -2,10 +2,12 @@ package com.example.coyomobileapp.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -15,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.coyomobileapp.R;
 import com.example.coyomobileapp.Utils.UserDetails;
+import com.example.coyomobileapp.View.Fragment.ChatFragment;
 import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -24,13 +27,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class ChatActivity extends AppCompatActivity {
+public class ChatActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String DATA = "extra_data";
+
     LinearLayout layout_1;
     RelativeLayout layout_2;
     ImageView sendButton;
     EditText messageArea;
     ScrollView scrollView;
     Firebase reference1, reference2;
+    Button btnBack;
+    TextView konsultan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +47,8 @@ public class ChatActivity extends AppCompatActivity {
         initView();
         initFirebase();
         klik();
+
+        konsultan.setText(getIntent().getStringExtra(DATA));
 
         reference1.addChildEventListener(new ChildEventListener() {
             @Override
@@ -84,6 +93,8 @@ public class ChatActivity extends AppCompatActivity {
         sendButton = findViewById(R.id.sendButton);
         messageArea = findViewById(R.id.messageArea);
         scrollView = findViewById(R.id.scrollViewChat);
+        btnBack = findViewById(R.id.buttonBack);
+        konsultan =  findViewById(R.id.konsultan);
     }
 
     private void initFirebase(){
@@ -93,22 +104,10 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     private void klik(){
-        sendButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String messageText = messageArea.getText().toString();
-
-                if(!messageText.equals("")){
-                    Map<String, String> map = new HashMap<>();
-                    map.put("message", messageText);
-                    map.put("user", UserDetails.username);
-                    reference1.push().setValue(map);
-                    reference2.push().setValue(map);
-                    messageArea.setText("");
-                }
-            }
-        });
+        sendButton.setOnClickListener(this);
+        btnBack.setOnClickListener(this);
     }
+
 
     public void addMessageBox(String message, int type){
         TextView textView = new TextView(ChatActivity.this);
@@ -128,5 +127,25 @@ public class ChatActivity extends AppCompatActivity {
         textView.setLayoutParams(lp2);
         layout_1.addView(textView);
         scrollView.fullScroll(View.FOCUS_DOWN);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.sendButton){
+            String messageText = messageArea.getText().toString();
+
+            if(!messageText.equals("")){
+                Map<String, String> map = new HashMap<>();
+                map.put("message", messageText);
+                map.put("user", UserDetails.username);
+                reference1.push().setValue(map);
+                reference2.push().setValue(map);
+                messageArea.setText("");
+            }
+        }
+        else if(v.getId() == R.id.buttonBack){
+            Intent move = new Intent(ChatActivity.this, DraftChatActivity.class);
+            startActivity(move);
+        }
     }
 }
