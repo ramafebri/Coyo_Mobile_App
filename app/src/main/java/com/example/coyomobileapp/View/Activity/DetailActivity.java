@@ -13,7 +13,7 @@ import com.example.coyomobileapp.R;
 import com.example.coyomobileapp.Utils.Constant;
 
 public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView tvDetailTitle, tvDetailDesc;
+    TextView tvDetailTitle, getTvDetailTitle;
     TextView tv1, tv2;
     Button btnBanding, btnAjukan;
     Kta dataBarang;
