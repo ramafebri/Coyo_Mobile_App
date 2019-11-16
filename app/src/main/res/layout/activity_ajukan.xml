@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".View.Activity.AjukanActivity">
 
-
+    
     <Button
         android:id="@+id/buttonPengajuan"
         android:layout_width="wrap_content"
