@@ -54,7 +54,7 @@
                     android:layout_marginTop="30sp"
                     android:layout_weight="1"
                     android:text="Kartu Kredit" />
-                
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
