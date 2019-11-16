@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".View.Activity.CompareActivity"
-    android:background="#FFFFFF">
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".View.Activity.CompareActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_weight="1.04"
@@ -24,8 +24,6 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_marginStart="52dp"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView3"
             app:srcCompat="@drawable/logo_ctbc" />
@@ -34,391 +32,73 @@
             android:id="@+id/imageView3"
             android:layout_width="150sp"
             android:layout_height="150dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="68dp"
-            android:layout_marginEnd="34dp"
+            android:layout_marginEnd="36dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_dbs" />
 
-    <TextView
-        android:id="@+id/kta1Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="@string/ctbc_judul"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        <TextView
+            android:id="@+id/kta1Title"
+            android:layout_width="110sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/ctbc_judul"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <TextView
-        android:id="@+id/kta2Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="37dp"
-        android:gravity="center"
-        android:text="@string/dbs_judul"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.25" />
+        <TextView
+            android:id="@+id/kta2Title"
+            android:layout_width="110sp"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:text="@string/dbs_judul"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toEndOf="@+id/kta1Title"
+            app:layout_constraintTop_toTopOf="@+id/kta1Title" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="97dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/btn_back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/borderlessButtonStyle" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="384dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kta1Title"
+            app:srcCompat="@drawable/line_compare" />
+
+        <Button
+            android:id="@+id/button11"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="97dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="350sp"
-        android:layout_height="500sp"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="130sp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="@string/suku_bunga"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/kta1skb"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30sp"
-                    android:text="15,48% -19,08%"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/kta2skb"
-                    android:layout_width="100sp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100sp"
-                    android:text="10,56% - 17,88%"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp">
-
-                <TableRow
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="8dp">
-
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/biaya_proses"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/biayaproses1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:text="3% dari jumlah pinjaman"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/biayaproses2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="Sesuai syarat dan ketentuan"
-                        android:textSize="12sp" />
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/biaya_administrasi"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/biayaadmin1"
-                        android:layout_width="107dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_marginRight="16dp"
-                        android:text="Sesuai syarat dan ketentuan "
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/biayaadmin2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="Rp.399.000"
-                        android:textSize="12sp" />
-
-
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/biaya_asuransi"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/biayaasuransi1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:text="Tidak ada"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/biayaasuransi2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="1% jumlah cicilan"
-                        android:textSize="12sp" />
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/biaya_provisi"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/biayaprovosi1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="10sp"
-                        android:text="Tidak ada"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/biayaprovosi2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="1,75% dari jumlah pinjaman untuk tahun pertama"
-                        android:textSize="12sp" />
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/bea_materai"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/beamaterai1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:text="Rp.6000."
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/beamaterai2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="Rp.6000"
-                        android:textSize="12sp" />
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/biaya_pelunasan_awal"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/lunasAwal1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:text="9% sisa cicilan pokok\nBiaya pelunasan dipercepat"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/lunasAwal2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="8% Sisa Cicilan Produk"
-                        android:textSize="12sp" />
-                </TableRow>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10sp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/biaya_keterlambatan"
-                    android:textColor="@android:color/black"
-                    android:textSize="12sp" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/keterlambatan1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_marginRight="16dp"
-                        android:text="5% jumlah cicilan"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/keterlambatan2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10sp"
-                        android:layout_weight="1"
-                        android:text="Rp250.000 ditambah 6% jumlah cicilan"
-                        android:textSize="12sp" />
-                </TableRow>
-
-            </TableLayout>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="384dp"
-        android:layout_height="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89"
-        app:srcCompat="@drawable/line_compare" />
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
-            android:layout_width="351dp"
-            android:layout_height="396dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="203dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/cardView3"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView3"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
 
             <LinearLayout
-                android:layout_width="326dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:orientation="vertical">
@@ -426,185 +106,492 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="90sp"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/minimum_pendapatan"
+                    android:text="@string/suku_bunga"
+                    android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="12sp" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <TableLayout
+                    <TextView
+                        android:id="@+id/kta1skb"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="15,48% -19,08%"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/kta2skb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/biaya_proses"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/biayaproses1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="3% dari jumlah pinjaman"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/biayaproses2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/biaya_administrasi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/biayaadmin1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:layout_marginRight="16dp"
+                        android:text="Sesuai syarat dan ketentuan "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/biayaadmin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:text="Rp.399.000"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/biaya_asuransi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/biayaasuransi1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="Tidak ada"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/biayaasuransi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:layout_weight="1"
+                        android:text="1% jumlah cicilan"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/biaya_provisi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/biayaprovosi1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="Tidak ada"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/biayaprovosi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/bea_materai"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/beamaterai1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="Rp.6000."
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/beamaterai2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:text="Rp.6000"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/biaya_pelunasan_awal"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lunasAwal1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="9% sisa cicilan pokok\nBiaya pelunasan dipercepat"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/lunasAwal2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:text="8% Sisa Cicilan Produk"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/biaya_keterlambatan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/keterlambatan1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="5% jumlah cicilan"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/keterlambatan2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:text="Rp250.000 ditambah 6% jumlah cicilan"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp">
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/minimum_pendapatan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="8dp">
 
-                        <TextView
-                            android:id="@+id/minimumpendapatan1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10sp"
-                            android:layout_marginRight="16dp"
-                            android:text="Rp.2,50juta"
-                            android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/minimumpendapatan2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="120sp"
-                            android:layout_weight="1"
-                            android:text="Rp.3juta"
-                            android:textSize="12sp" />
-                    </TableRow>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/minimumpendapatan1"
+                        android:layout_width="100sp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="112sp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="@string/usia_minimum"
-                        android:textColor="@android:color/black"
+                        android:layout_marginStart="30sp"
+                        android:text="Rp.2,50juta"
                         android:textSize="12sp" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp">
-
-                        <TextView
-                            android:id="@+id/usiamin1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10sp"
-                            android:layout_marginRight="16dp"
-                            android:text="21 Tahun"
-                            android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/usiamin2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="120sp"
-                            android:layout_weight="1"
-                            android:text="21 Tahun"
-                            android:textSize="12sp" />
-                    </TableRow>
 
                     <TextView
+                        android:id="@+id/minimumpendapatan2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="110dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="@string/usia_maksimum"
-                        android:textColor="@android:color/black"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:layout_weight="1"
+                        android:text="Rp.3juta"
+                        android:textAlignment="viewEnd"
                         android:textSize="12sp" />
+                </LinearLayout>
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/usia_minimum"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
-                        <TextView
-                            android:id="@+id/usiamax1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10sp"
-                            android:layout_marginRight="16dp"
-                            android:text="55 Tahun "
-                            android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/usiamax2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="120sp"
-                            android:layout_weight="1"
-                            android:text="55 Tahun"
-                            android:textSize="12sp" />
-
-
-                    </TableRow>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/usiamin1"
+                        android:layout_width="100sp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="@string/siapa_saja"
-                        android:textColor="@android:color/black"
+                        android:layout_marginStart="30sp"
+                        android:text="21 Tahun"
                         android:textSize="12sp" />
 
-                    <TableRow
+                    <TextView
+                        android:id="@+id/usiamin2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:layout_weight="1"
+                        android:text="21 Tahun"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/pendaftar1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10sp"
-                            android:layout_marginRight="16dp"
-                            android:text="Karyawan\nwiraswasta\nProfesional"
-                            android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/pendaftar2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10sp"
-                            android:layout_weight="1"
-                            android:text="WNI/KITAS\nKaryawan\nwiraswasta\nProfesional"
-                            android:textSize="12sp" />
-                    </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/usia_maksimum"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
-                </TableLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/usiamax1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="55 Tahun "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/usiamax2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:layout_weight="1"
+                        android:text="55 Tahun"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/siapa_saja"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pendaftar1"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="Karyawan\nwiraswasta\nProfesional"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pendaftar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60sp"
+                        android:layout_marginEnd="30sp"
+                        android:maxLines="5"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
-        android:text="Biaya"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kta1Title"
-        app:layout_constraintVertical_bias="0.666" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Biaya"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Persyaratan"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Persyaratan"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
