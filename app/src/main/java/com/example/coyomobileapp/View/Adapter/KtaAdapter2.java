@@ -69,8 +69,8 @@ public class KtaAdapter2 extends RecyclerView.Adapter<KtaAdapter2.ViewHolder> {
         }
 
         public void bind(final Kta dataBarang, final KtaListener barangListener) {
-            tvNama.setText(dataBarang.getNama());
-            tvHarga.setText(dataBarang.getHarga());
+            tvNama.setText(dataBarang.getTitle());
+            tvHarga.setText(dataBarang.getShort_desc());
             //tvStok.setText(dataBarang.getStok());
 
             linearLayout.setOnClickListener(v -> barangListener.onBarangClick(dataBarang));

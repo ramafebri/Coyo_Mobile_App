@@ -23,11 +23,11 @@ public class CompareActivity extends AppCompatActivity {
 
         Kta data1 = getIntent().getParcelableExtra(Constant.Extra.DATA1);
         assert data1 != null;
-        kta1title.setText(data1.getNama());
-        skb1.setText(data1.getHarga());
+        kta1title.setText(data1.getTitle());
+        skb1.setText(data1.getShort_desc());
 
         Kta data2 = getIntent().getParcelableExtra(Constant.Extra.DATA);
-        kta2title.setText(data2.getNama());
-        skb2.setText(data2.getHarga());
+        kta2title.setText(data2.getTitle());
+        skb2.setText(data2.getShort_desc());
     }
 }

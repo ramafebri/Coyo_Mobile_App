@@ -30,8 +30,8 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
 
         dataBarang = getIntent().getParcelableExtra(Constant.Extra.DATA);
         assert dataBarang != null;
-        tvDetailTitle.setText(dataBarang.getNama());
-        tvDetailDesc.setText(dataBarang.getHarga());
+        tvDetailTitle.setText(dataBarang.getTitle());
+        tvDetailDesc.setText(dataBarang.getShort_desc());
     }
 
     @Override

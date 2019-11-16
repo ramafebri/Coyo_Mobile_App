@@ -35,10 +35,12 @@ public class KtaViewModel {
                     public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
                         if (response.isSuccessful()){
                             JsonObject body = response.body();
-                            JsonArray array = body.get("data").getAsJsonArray();
+                            assert body != null;
+                            JsonArray array = body.getAsJsonArray();
                             Type type = new TypeToken<List<Kta>>(){}.getType();
                             List<Kta> dataBarangs = new Gson().fromJson(array, type);
                             homeView.successShowBarang(dataBarangs);
+                            assert response.body() != null;
                             Log.e(tag, response.body().toString());
                         } else {
                             homeView.failedShowBarang("Maaf terjadi kesalahan");
