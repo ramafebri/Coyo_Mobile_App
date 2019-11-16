@@ -4,8 +4,8 @@
     <string name="email">Masukan Email Anda</string>
     <string name="pass">Masukan sandi Anda</string>
     <string name="pass2">Konfirmasi sandi Anda</string>
-    <string name="ctbc_judul">CTBC Bank KTA Dana Cinta</string>
-    <string name="dbs_judul">Bank DBS Dana Bantuan Sahabat</string>
+    <string name="ctbc_judul">CTBC Bank KTA\nDana Cinta</string>
+    <string name="dbs_judul">Bank DBS Dana Bantuan\nSahabat</string>
     <string name="Commonwealth_judul">Commonwealth BizLoan</string>
     <string name="KTAKEB_judul">KTA KEB Hana Bank</string>
     <string name="bunga_ctbc">15,48% per tahun\n Jumlah Pinjaman : hingga Rp200 juta</string>
@@ -40,5 +40,17 @@
     <string name="menu_send">Send</string>
 
     <string name="ctbc_ulasan">49 Ulasan</string>
-    <string name="dbs_rating">Sangat Bagus</string>
+    <string name="ctbc_rating">Sangat Bagus</string>
+    <string name="suku_bunga">Suku Bunga / APR</string>
+    <string name="biaya_proses">Biaya Proses</string>
+    <string name="biaya_administrasi">Biaya Administrasi</string>
+    <string name="biaya_asuransi">Biaya Asuransi</string>
+    <string name="biaya_provisi">Biaya Provosi</string>
+    <string name="bea_materai">Bea Materai</string>
+    <string name="biaya_pelunasan_awal">Biaya Pelunasan Awal</string>
+    <string name="biaya_keterlambatan">Biaya Keterlambatan</string>
+    <string name="minimum_pendapatan">Minimum pendapatan bulanan</string>
+    <string name="usia_minimum">Usia Minimum</string>
+    <string name="usia_maksimum">Usia Maksimum</string>
+    <string name="siapa_saja">Siapa Saja yang Bisa Mendaftar</string>
 </resources>
