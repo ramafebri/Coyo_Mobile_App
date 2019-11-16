@@ -11,21 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activity.ChatActivity"></activity>
-        <activity android:name=".View.Activity.AjukanActivity"></activity>
+        <activity android:name=".View.Activity.DraftChatActivity"></activity>
+        <activity android:name=".View.Activity.ChatActivity" />
+        <activity android:name=".View.Activity.AjukanActivity" />
         <activity android:name=".View.Activity.Kta2Activity" />
         <activity android:name=".View.Activity.CompareActivity" />
         <activity android:name=".View.Activity.DetailActivity" />
         <activity android:name=".View.Activity.KtaActivity" />
         <activity android:name=".View.Activity.DaftarActivity" />
-        <activity android:name=".View.Activity.MainActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".View.Activity.MainActivity">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        </activity>
         <activity android:name=".View.Activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".View.Activity.LoginActivity" />
     </application>

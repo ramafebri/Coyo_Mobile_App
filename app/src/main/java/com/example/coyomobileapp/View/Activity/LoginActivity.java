@@ -1,5 +1,6 @@
 package com.example.coyomobileapp.View.Activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.coyomobileapp.R;
@@ -63,35 +66,49 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.buttonLogin){
-            if (validation()){
+        if (v.getId() == R.id.buttonLogin) {
+            if (validation()) {
                 String url = "https://coyomobileapp.firebaseio.com/users.json";
+                final ProgressDialog pd = new ProgressDialog(LoginActivity.this);
+                pd.setMessage("Loading...");
+                pd.show();
 
-                StringRequest request = new StringRequest(Request.Method.GET, url, s -> {
-                    if(s.equals("null")){
-                        Toast.makeText(LoginActivity.this, "user not found", Toast.LENGTH_LONG).show();
-                    }
-                    else{
-                        try {
-                            JSONObject obj = new JSONObject(s);
-
-                            if(!obj.has(email)){
-                                Toast.makeText(LoginActivity.this, "user not found", Toast.LENGTH_LONG).show();
-                            }
-                            else if(obj.getJSONObject(email).getString("password").equals(pass)){
-                                UserDetails.username = email;
-                                UserDetails.password = pass;
-                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                            }
-                            else {
-                                Toast.makeText(LoginActivity.this, "incorrect password", Toast.LENGTH_LONG).show();
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
+                    @Override
+                    public void onResponse(String s) {
+                        if(s.equals("null")){
+                            Toast.makeText(LoginActivity.this, "user not found", Toast.LENGTH_LONG).show();
                         }
-                    }
-                }, volleyError -> System.out.println("" + volleyError));
+                        else{
+                            try {
+                                JSONObject obj = new JSONObject(s);
 
+                                if(!obj.has(email)){
+                                    Toast.makeText(LoginActivity.this, "user not found", Toast.LENGTH_LONG).show();
+                                }
+                                else if(obj.getJSONObject(email).getString("password").equals(pass)){
+                                    UserDetails.username = email;
+                                    UserDetails.password = pass;
+                                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                    finish();
+                                }
+                                else {
+                                    Toast.makeText(LoginActivity.this, "incorrect password", Toast.LENGTH_LONG).show();
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        pd.dismiss();
+                    }
+                },new Response.ErrorListener(){
+                    @Override
+                    public void onErrorResponse(VolleyError volleyError) {
+                        System.out.println("" + volleyError);
+                        pd.dismiss();
+                    }
+                });
                 RequestQueue rQueue = Volley.newRequestQueue(LoginActivity.this);
                 rQueue.add(request);
             }

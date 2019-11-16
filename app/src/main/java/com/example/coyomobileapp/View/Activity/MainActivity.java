@@ -1,15 +1,19 @@
 package com.example.coyomobileapp.View.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.coyomobileapp.R;
 import com.example.coyomobileapp.View.Fragment.ChatFragment;
+import com.example.coyomobileapp.View.Fragment.HistoryFragment;
 import com.example.coyomobileapp.View.Fragment.HomeFragment;
 import com.example.coyomobileapp.View.Fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,4 +64,20 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return false;
             };
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("Apa kalian ingin Logout?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", (dialog, id) -> {
+                    FirebaseAuth auth = FirebaseAuth.getInstance();
+                    auth.signOut();
+                    Intent login = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(login);
+                    finish();
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
+
 }
