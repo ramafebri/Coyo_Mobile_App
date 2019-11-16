@@ -57,7 +57,7 @@
                 >
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/people_card"
+                    android:id="@+id/data_diri"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/spacing_large"
@@ -89,6 +89,7 @@
                                 android:tint="@color/colorCoyo"/>
 
                             <TextView
+                                android:id="@+id/nama_profil"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
@@ -112,6 +113,7 @@
                                 android:tint="@color/colorCoyo"/>
 
                             <TextView
+                                android:id="@+id/nomor_telepon"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
@@ -135,6 +137,7 @@
                                 android:tint="@color/colorCoyo"/>
 
                             <TextView
+                                android:id="@+id/email_profil"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
@@ -151,11 +154,12 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/pekerjaan_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/spacing_large"
                     android:layout_marginLeft="@dimen/spacing_large"
                     android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_large"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="4dp"
@@ -180,9 +184,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing_medium"
                                 android:src="@drawable/ic_business_24dp"
-                                android:tint="@color/colorCoyo"/>
+                                android:tint="@color/colorCoyo" />
 
                             <TextView
+                                android:id="@+id/pekerjaan_profil"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
