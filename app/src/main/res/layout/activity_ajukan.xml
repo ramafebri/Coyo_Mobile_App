@@ -7,7 +7,7 @@
     tools:context=".View.Activity.AjukanActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonPengajuan"
         android:layout_width="wrap_content"
         android:layout_height="55sp"
         android:background="@drawable/btn_ajukan2"
@@ -19,15 +19,20 @@
         app:layout_constraintVertical_bias="0.982" />
 
     <com.smarteist.autoimageslider.SliderView
-        android:id="@+id/sliderView"
+        android:id="@+id/sliderViewAjukan"
         android:layout_width="350sp"
         android:layout_height="205dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/hero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack">
+
+        <ImageView
+            android:id="@+id/imgSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </com.smarteist.autoimageslider.SliderView>
 
@@ -42,18 +47,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sliderView" />
+        app:layout_constraintTop_toBottomOf="@+id/sliderViewAjukan" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonBack"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="92sp"
         android:layout_height="26sp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_back"
+        app:layout_constraintEnd_toEndOf="@+id/sliderViewAjukan"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/borderlessButtonStyle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView15"
@@ -181,5 +187,5 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />/>
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 </androidx.constraintlayout.widget.ConstraintLayout>

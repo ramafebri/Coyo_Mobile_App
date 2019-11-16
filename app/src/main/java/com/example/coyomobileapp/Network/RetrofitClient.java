@@ -25,7 +25,7 @@ public class RetrofitClient {
         return getRetrofit().create(ApiInterface.class);
     }
 
-    public Retrofit getRetrofit(){
+    private Retrofit getRetrofit(){
 
         final OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .readTimeout(15, TimeUnit.SECONDS)
