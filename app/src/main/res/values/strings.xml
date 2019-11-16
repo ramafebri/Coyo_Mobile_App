@@ -5,14 +5,14 @@
     <string name="pass">Masukan sandi Anda</string>
     <string name="pass2">Konfirmasi sandi Anda</string>
     <string name="ctbc_judul">CTBC Bank KTA Dana Cinta</string>
-    <string name="dbs_judul">AXA SmartCare Executive</string>
+    <string name="dbs_judul">Bank DBS Dana Bantuan Sahabat</string>
     <string name="Commonwealth_judul">Commonwealth BizLoan</string>
     <string name="KTAKEB_judul">KTA KEB Hana Bank</string>
-    <string name="bunga_ctbc">15,48%\n Jumlah Pinjaman : hingga Rp200 juta</string>
-    <string name="bunga_dbs">Rekanan Rumah sakit : 490\nWaktu Tunggu : 40 Hari</string>
-    <string name="rekanan_simasnte">Rekanan Rumah sakit : 500\n Tunggu : 15 Hari</string>
-    <string name="erkanan_lippo">Rekanan Rumah sakit : 500\n Tunggu : 15 Hari</string>
-    <string name="desc_axa">AXA SmartCare Executive\n AXA menjamin biaya rawat inap, biaya kamar dan makan, ICU, dokter bedah, dan biaya lainnya untuk para karyawan Anda dan juga anggota keluarga mereka.</string>
+    <string name="bunga_ctbc">15,48% per tahun\n Jumlah Pinjaman : hingga Rp200 juta</string>
+    <string name="bunga_dbs">10,56% per tahun\n Jumlah Pinjaman : hingga Rp300 juta</string>
+    <string name="bunga_common">13,08% per tahun\n Jumlah Pinjaman : hingga Rp500 juta</string>
+    <string name="bunga_KTAKEB">11,40% per tahun\n Jumlah Pinjaman : hingga Rp200 juta</string>
+    <string name="desc_ctbc">Butuh dana pinjaman? KTA Dana Cinta dari Bank CTBC memberikan anda pinjaman dengan proses cepat, angsuran tetap, dan suku bunga rendah. Dengan nilai pinjaman hingga Rp200 juta, KTA Dana cinta cocok untuk keperluan bisnis anda..</string>
     <string name="title_activity_bottom">bottomActivity</string>
     <string name="title_home">Home</string>
     <string name="title_profile">Profile</string>
@@ -39,6 +39,6 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
-    <string name="axa_ulasan">49 Ulasan</string>
-    <string name="axa_rating">Sangat Bagus</string>
+    <string name="ctbc_ulasan">49 Ulasan</string>
+    <string name="dbs_rating">Sangat Bagus</string>
 </resources>
