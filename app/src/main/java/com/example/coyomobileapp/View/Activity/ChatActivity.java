@@ -17,7 +17,6 @@ import android.widget.TextView;
 
 import com.example.coyomobileapp.R;
 import com.example.coyomobileapp.Utils.UserDetails;
-import com.example.coyomobileapp.View.Fragment.ChatFragment;
 import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
