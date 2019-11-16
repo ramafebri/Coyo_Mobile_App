@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">Coyo</string>
-    <string name="email">Masukan Email Anda</string>
+    <string name="email">Masukan Username Anda</string>
     <string name="pass">Masukan sandi Anda</string>
     <string name="pass2">Konfirmasi sandi Anda</string>
     <string name="ctbc_judul">CTBC Bank KTA\nDana Cinta</string>

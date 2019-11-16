@@ -80,7 +80,9 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
             tvDesc.setText(dataBarang.getShort_desc());
             Glide.with(itemView.getContext())
                     .load(dataBarang.getIcon())
-                    .apply(new RequestOptions().override(55, 55))
+                    .apply(new RequestOptions().override(85, 115))
+                    .fitCenter()
+                    .dontAnimate()
                     .into(imageView);
 
             btnDetails.setOnClickListener(v -> barangListener.onBarangClick(dataBarang));

@@ -1,14 +1,13 @@
 package com.example.coyomobileapp.View.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.icu.text.TimeZoneFormat;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -81,7 +80,8 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         assert data1 != null;
         Glide.with(this)
                 .load(data1.getIcon())
-                .apply(new RequestOptions().override(30, 30))
+                .apply(new RequestOptions().override(150, 150))
+                .fitCenter()
                 .into(imageView2);
         kta1title.setText(data1.getTitle());
         skb1.setText(data1.getSuku_bunga());
@@ -105,7 +105,8 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         assert data2 != null;
         Glide.with(this)
                 .load(data2.getIcon())
-                .apply(new RequestOptions().override(30, 30))
+                .apply(new RequestOptions().override(150, 150))
+                .fitCenter()
                 .into(imageView3);
         kta2title.setText(data2.getTitle());
         skb2.setText(data2.getSuku_bunga());

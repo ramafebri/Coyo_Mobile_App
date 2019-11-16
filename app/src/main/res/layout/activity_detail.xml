@@ -6,22 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.smarteist.autoimageslider.SliderView
-        android:id="@+id/sliderViewHome"
-        android:layout_width="350sp"
-
-        android:layout_height="190sp"
-        android:layout_marginTop="60sp"
-        android:layout_marginBottom="36sp"
-        android:background="@drawable/hero"
-        app:layout_constraintBottom_toTopOf="@+id/tvDetailTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </com.smarteist.autoimageslider.SliderView>
-
     <Button
         android:id="@+id/btnBanding"
         android:layout_width="200sp"
@@ -32,6 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnAjukan"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="350sp"
+        android:layout_height="190sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14Back"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/btnAjukan"
@@ -49,14 +43,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14sp"
-        android:layout_marginTop="16sp"
+        android:layout_marginTop="16dp"
         android:text="@string/ctbc_judul"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sliderViewHome" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView33" />
 
     <TextView
         android:id="@+id/tvDetailSkb"
@@ -110,20 +104,17 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/button14Back"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="97sp"
         android:layout_height="26sp"
         android:layout_marginStart="24sp"
         android:layout_marginTop="16sp"
-        android:layout_marginBottom="10sp"
         android:background="@drawable/btn_back"
-        app:layout_constraintBottom_toTopOf="@+id/sliderViewHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv11"
@@ -191,8 +182,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4sp"
         android:text="@string/pembiayaan"
-        app:layout_constraintEnd_toEndOf="@+id/sliderViewHome"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7" />
 
