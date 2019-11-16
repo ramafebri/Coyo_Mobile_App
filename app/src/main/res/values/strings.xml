@@ -56,4 +56,5 @@
     <string name="usia_minimum">Usia Minimum</string>
     <string name="usia_maksimum">Usia Maksimum</string>
     <string name="siapa_saja">Siapa Saja yang Bisa Mendaftar</string>
+    <string name="hint_pesan">\u0020\u0020 Tulis Pesan Anda...</string>
 </resources>
