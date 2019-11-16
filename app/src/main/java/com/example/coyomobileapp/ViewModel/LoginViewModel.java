@@ -6,7 +6,7 @@ import androidx.databinding.BaseObservable;
 
 import com.example.coyomobileapp.View.Activity.MainActivity;
 
-public class LoginViewModel extends BaseObservable {
+public class LoginViewModel {
 
     private Context context;
     public LoginViewModel(){

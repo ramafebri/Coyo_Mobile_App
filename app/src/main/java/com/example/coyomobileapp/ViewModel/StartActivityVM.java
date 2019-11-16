@@ -7,7 +7,7 @@ import androidx.databinding.BaseObservable;
 import com.example.coyomobileapp.View.Activity.DaftarActivity;
 import com.example.coyomobileapp.View.Activity.LoginActivity;
 
-public class StartActivityVM extends BaseObservable {
+public class StartActivityVM {
     private Context context;
     public StartActivityVM(){
 
