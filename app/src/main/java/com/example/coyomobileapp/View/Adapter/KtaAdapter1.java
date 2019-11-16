@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.coyomobileapp.Model.Kta;
 import com.example.coyomobileapp.R;
 
@@ -56,7 +58,8 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         LinearLayout linearLayout;
-        TextView tvNama, tvHarga, tvStok;
+        TextView tvNama, tvDesc;
+        ImageView imageView;
         Button btnDetails;
 
         public ViewHolder(@NonNull View itemView) {
@@ -67,15 +70,19 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
         private void initView(View itemView) {
             linearLayout = itemView.findViewById(R.id.linear_item);
             tvNama = itemView.findViewById(R.id.kta_title);
-            tvHarga = itemView.findViewById(R.id.kta_description);
+            tvDesc = itemView.findViewById(R.id.kta_description);
             btnDetails = itemView.findViewById(R.id.btnDetail);
-            //tvStok = itemView.findViewById(R.id.tvStok);
+            imageView = itemView.findViewById(R.id.img_poster);
+
         }
 
         public void bind(final Kta dataBarang, final KtaListener barangListener) {
             tvNama.setText(dataBarang.getTitle());
-            tvHarga.setText(dataBarang.getShort_desc());
-            //tvStok.setText(dataBarang.getStok());
+            tvDesc.setText(dataBarang.getShort_desc());
+            Glide.with(itemView.getContext())
+                    .load(dataBarang.getIcon())
+                    .apply(new RequestOptions().override(55, 55))
+                    .into(imageView);
 
             btnDetails.setOnClickListener(v -> barangListener.onBarangClick(dataBarang));
         }

@@ -8,7 +8,10 @@
     <string name="dbs_judul">Bank DBS Dana Bantuan\nSahabat</string>
     <string name="Commonwealth_judul">Commonwealth BizLoan</string>
     <string name="KTAKEB_judul">KTA KEB Hana Bank</string>
-    <string name="bunga_ctbc">15,48% per tahun\n Jumlah Pinjaman : hingga Rp200 juta</string>
+    <string name="bunga_ctbc">15,48%</string>
+    <string name="pertahun">per tahun</string>
+    <string name="jumlah_pinjaman">Jumlah Pinjaman : hingga</string>
+    <string name="pembiayaan"> Rp200 juta</string>
     <string name="bunga_dbs">10,56% per tahun\n Jumlah Pinjaman : hingga Rp300 juta</string>
     <string name="bunga_common">13,08% per tahun\n Jumlah Pinjaman : hingga Rp500 juta</string>
     <string name="bunga_KTAKEB">11,40% per tahun\n Jumlah Pinjaman : hingga Rp200 juta</string>

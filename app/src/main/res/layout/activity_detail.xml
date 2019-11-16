@@ -49,18 +49,18 @@
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sliderView" />
 
     <TextView
-        android:id="@+id/tvDetailDesc"
+        android:id="@+id/tvDetailSkb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bunga_ctbc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailTitle"
         app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle" />
 
     <LinearLayout
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc">
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb">
 
         <ImageView
             android:id="@+id/imageView5"
@@ -112,13 +112,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        style="?android:attr/borderlessButtonStyle" />/>
+        style="?android:attr/borderlessButtonStyle" /><![CDATA[/>
+
+    ]]>
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="348dp"
         android:layout_height="29dp"
-        android:layout_marginTop="11dp"
         android:layout_marginBottom="152dp"
         android:maxLines="1"
         android:text="Butuh dana pinjaman? KTA Dana Cinta dari Bank CTBC memberikan anda \n pinjaman dengan proses cepat, angsuran tetap, dan suku bunga rendah. \n Dengan nilai pinjaman hingga Rp200 juta, KTA Dana cinta cocok untuk keperluan bisnis anda."
@@ -126,7 +127,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.317"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.261" />
 
     <TextView
         android:id="@+id/tv2"
@@ -149,11 +151,37 @@
         android:text="Deskripsi"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pertahun"
+        app:layout_constraintStart_toEndOf="@+id/tvDetailSkb"
+        app:layout_constraintTop_toTopOf="@+id/tvDetailSkb" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jumlah_pinjaman"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailSkb"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailSkb" />
+
+    <TextView
+        android:id="@+id/tvPembiayaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/pembiayaan"
+        app:layout_constraintEnd_toEndOf="@+id/sliderView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

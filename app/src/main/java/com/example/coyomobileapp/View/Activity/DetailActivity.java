@@ -13,8 +13,8 @@ import com.example.coyomobileapp.R;
 import com.example.coyomobileapp.Utils.Constant;
 
 public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView tvDetailTitle, tvDetailDesc;
-    Button btnBanding, btnAjukan;
+    TextView tvDetailTitle, tvDetailDesc, tvSKB, tvPembiayaian;
+    Button btnBanding, btnAjukan, btnBalik;
     Kta dataBarang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,14 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_detail);
 
         tvDetailTitle = findViewById(R.id.tvDetailTitle);
-        tvDetailDesc = findViewById(R.id.tvDetailDesc);
+        tvDetailDesc = findViewById(R.id.tv1);
+        tvSKB = findViewById(R.id.tvDetailSkb);
+        tvPembiayaian = findViewById(R.id.tvPembiayaan);
+
         btnAjukan = findViewById(R.id.btnAjukan);
         btnBanding = findViewById(R.id.btnBanding);
+        btnBalik = findViewById(R.id.button14);
+        btnBalik.setOnClickListener(this);
         btnBanding.setOnClickListener(this);
         btnAjukan.setOnClickListener(this);
 
@@ -32,6 +37,8 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         assert dataBarang != null;
         tvDetailTitle.setText(dataBarang.getTitle());
         tvDetailDesc.setText(dataBarang.getShort_desc());
+        tvSKB.setText(dataBarang.getSuku_bunga());
+        tvPembiayaian.setText(dataBarang.getPembiayaan());
     }
 
     @Override
@@ -41,7 +48,10 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             move.putExtra(Constant.Extra.DATA, dataBarang);
             startActivity(move);
         }else if(v.getId() == R.id.btnAjukan) {
-            Intent move = new Intent(DetailActivity.this, DaftarActivity.class);
+            Intent move = new Intent(DetailActivity.this, AjukanActivity.class);
+            startActivity(move);
+        }else if (v.getId() == R.id.button14){
+            Intent move = new Intent(DetailActivity.this, KtaActivity.class);
             startActivity(move);
         }
     }
