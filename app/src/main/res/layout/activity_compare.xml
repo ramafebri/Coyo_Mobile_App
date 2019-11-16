@@ -138,7 +138,7 @@
                     <ImageView
                         android:id="@+id/imageView10"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -187,7 +187,7 @@
                     <ImageView
                         android:id="@+id/imageView12"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -237,7 +237,7 @@
                     <ImageView
                         android:id="@+id/imageView14"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -287,7 +287,7 @@
                     <ImageView
                         android:id="@+id/imageView16"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -331,14 +331,14 @@
                     <ImageView
                         android:id="@+id/imageView17"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView18"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -380,14 +380,14 @@
                     <ImageView
                         android:id="@+id/imageView19"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView20"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -430,14 +430,14 @@
                     <ImageView
                         android:id="@+id/imageView21"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView22"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -479,14 +479,14 @@
                     <ImageView
                         android:id="@+id/imageView23"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView24"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -550,14 +550,14 @@
                     <ImageView
                         android:id="@+id/imageView25"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView26"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -600,14 +600,14 @@
                     <ImageView
                         android:id="@+id/imageView27"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView28"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -651,14 +651,14 @@
                     <ImageView
                         android:id="@+id/imageView29"
                         android:layout_width="30sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView30"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
@@ -700,16 +700,15 @@
 
                     <ImageView
                         android:id="@+id/imageView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_width="30sp"
+                        android:layout_height="10sp"
+                        android:layout_marginStart="20sp"
                         app:srcCompat="@drawable/bullet_img" />
 
                     <ImageView
                         android:id="@+id/imageView32"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_height="10sp"
                         app:srcCompat="@drawable/bullet_img2" />
 
                     <TextView
