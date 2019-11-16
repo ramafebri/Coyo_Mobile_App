@@ -2,6 +2,7 @@ package com.example.coyomobileapp.Network;
 
 import android.graphics.Movie;
 
+import com.example.coyomobileapp.Model.Ajuan;
 import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
@@ -27,14 +28,15 @@ public interface ApiInterface {
 
     @FormUrlEncoded
     @POST("pengajuan/add")
-    Call<JSONObject> addPengajuan(
+    Call<Ajuan> addPengajuan(
             @Field("nama") String nama,
-            @Field("tempat_lahir") String tempatLahir,
-            @Field("tanggal_lahir") String tglLahir,
-            @Field("kota_domisili") String domisili,
-            @Field("id_nasabah") Integer id_nasabah,
-            @Field("ajuan_kta") String ajuanKta,
-            @Field("jumlah_pinjaman") String jumlahPinjaman
+            @Field("telepon") String telepon,
+            @Field("tempat_lahir") String tempat_lahir,
+            @Field("tanggal_lahir") String tanggal_lahir,
+            @Field("kota_domisili") String kota_domisili,
+            @Field("ajuan_kta") String ajuan_kta,
+            @Field("penghasilan") String penghasilan,
+            @Field("jumlah_pinjaman") String jumlah_pinjaman
 
     );
 

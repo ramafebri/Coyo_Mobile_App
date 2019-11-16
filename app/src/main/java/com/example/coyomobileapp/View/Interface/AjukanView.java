@@ -6,17 +6,19 @@ public interface AjukanView {
 
     String getTempatLahir();
 
+    String getTelepon();
+
     String getTanggalLahir();
 
     String getDomisili();
-
-    Integer getNasabahID();
 
     String getAjuanKTA();
 
     String getJumlahPinjaman();
 
-    void successAddPeganjuan();
+    String getJumlahPenghasilan();
+
+    void successAddPengajuan();
 
     void failedAddPengajuan();
 
