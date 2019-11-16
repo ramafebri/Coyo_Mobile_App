@@ -4,8 +4,8 @@ import android.content.Context;
 
 import androidx.databinding.BaseObservable;
 
+import com.example.coyomobileapp.View.Activity.DaftarActivity;
 import com.example.coyomobileapp.View.Activity.LoginActivity;
-import com.example.coyomobileapp.View.Activity.RegisterActivity;
 
 public class StartActivityVM extends BaseObservable {
     private Context context;
@@ -18,7 +18,7 @@ public class StartActivityVM extends BaseObservable {
     }
 
     public void onRegisClicked(){
-        context.startActivity(RegisterActivity.fillDetail(context));
+        context.startActivity(DaftarActivity.fillDetail(context));
 
     }
 }
