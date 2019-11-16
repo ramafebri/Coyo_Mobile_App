@@ -15,7 +15,7 @@
         android:layout_marginTop="52dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/hero"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetailTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
     </com.smarteist.autoimageslider.SliderView>
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btnBanding"
         android:layout_width="205sp"
         android:layout_height="55sp"
         android:background="@drawable/btn_bandingkan"
@@ -32,16 +32,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btnAjukan"
         android:layout_width="207sp"
         android:layout_height="55dp"
         android:background="@drawable/btn_ajukan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button12" />
+        app:layout_constraintStart_toEndOf="@+id/btnBanding" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvDetailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -54,14 +54,14 @@
         app:layout_constraintTop_toBottomOf="@+id/sliderView" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvDetailDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bunga_ctbc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailDesc">
 
         <ImageView
             android:id="@+id/imageView5"

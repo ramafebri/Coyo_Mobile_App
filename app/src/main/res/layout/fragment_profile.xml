@@ -94,7 +94,6 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="14dp"
                                 android:layout_toEndOf="@+id/image_user"
-                                android:text="@{userDetailViewModel.userName}"
                                 tools:ignore="RtlCompat" />
 
 
@@ -118,7 +117,6 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="14dp"
                                 android:layout_toEndOf="@+id/image_phone"
-                                android:text="@{userDetailViewModel.cell}"
                                 tools:ignore="RtlCompat" />
 
 
@@ -142,8 +140,6 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="14dp"
                                 android:layout_toEndOf="@+id/image_mail"
-                                android:text="@{userDetailViewModel.email}"
-                                app:visibility="@{userDetailViewModel.emailVisibility}"
                                 tools:ignore="RtlCompat" />
 
 
@@ -192,7 +188,6 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="14dp"
                                 android:layout_toEndOf="@+id/image_gender"
-                                android:text="@{userDetailViewModel.address}"
                                 tools:ignore="RtlCompat" />
 
 

@@ -17,7 +17,7 @@ import retrofit2.http.Query;
 public interface ApiInterface {
     @Headers("Content-Type: application/json")
 
-    @GET("Food")
+    @GET("all")
     Call<JsonObject> getBarang();
 
     @GET("Food")

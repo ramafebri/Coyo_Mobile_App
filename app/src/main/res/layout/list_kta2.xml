@@ -13,6 +13,7 @@
     app:cardElevation="4dp">
 
     <LinearLayout
+        android:id="@+id/linear_item2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -44,7 +45,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/asuransi_title"
+                android:id="@+id/kta_title1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
@@ -55,7 +56,7 @@
                 tools:text="@string/title_kta" />
 
             <TextView
-                android:id="@+id/asuransi_description"
+                android:id="@+id/kta_description1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"

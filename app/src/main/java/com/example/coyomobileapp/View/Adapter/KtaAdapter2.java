@@ -1,11 +1,9 @@
 package com.example.coyomobileapp.View.Adapter;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,11 +15,11 @@ import com.example.coyomobileapp.R;
 
 import java.util.List;
 
-public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
+public class KtaAdapter2 extends RecyclerView.Adapter<KtaAdapter2.ViewHolder> {
     private List<Kta> dataKta;
     private KtaListener ktaListener;
 
-    public KtaAdapter1(List<Kta> dataKtaa){
+    public KtaAdapter2(List<Kta> dataKtaa){
         this.dataKta = dataKtaa;
     }
 
@@ -35,15 +33,15 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
 
     @NonNull
     @Override
-    public KtaAdapter1.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public KtaAdapter2.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater
                 .from(parent.getContext())
-                .inflate(R.layout.list_kta, parent, false);
-        return new ViewHolder(view);
+                .inflate(R.layout.list_kta2, parent, false);
+        return new KtaAdapter2.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull KtaAdapter1.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Kta dataUser = get(position);
         holder.bind(dataUser,ktaListener);
     }
@@ -57,7 +55,6 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
         LinearLayout linearLayout;
         TextView tvNama, tvHarga, tvStok;
-        Button btnDetails;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -65,10 +62,9 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
         }
 
         private void initView(View itemView) {
-            linearLayout = itemView.findViewById(R.id.linear_item);
-            tvNama = itemView.findViewById(R.id.kta_title);
-            tvHarga = itemView.findViewById(R.id.kta_description);
-            btnDetails = itemView.findViewById(R.id.btnDetail);
+            linearLayout = itemView.findViewById(R.id.linear_item2);
+            tvNama = itemView.findViewById(R.id.kta_title1);
+            tvHarga = itemView.findViewById(R.id.kta_description1);
             //tvStok = itemView.findViewById(R.id.tvStok);
         }
 
@@ -77,9 +73,8 @@ public class KtaAdapter1 extends RecyclerView.Adapter<KtaAdapter1.ViewHolder> {
             tvHarga.setText(dataBarang.getShort_desc());
             //tvStok.setText(dataBarang.getStok());
 
-            btnDetails.setOnClickListener(v -> barangListener.onBarangClick(dataBarang));
+            linearLayout.setOnClickListener(v -> barangListener.onBarangClick(dataBarang));
         }
     }
 
-    }
-
+}

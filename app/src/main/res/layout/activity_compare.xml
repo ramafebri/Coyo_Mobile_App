@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompareActivity"
+    tools:context=".View.Activity.CompareActivity"
     android:background="#FFFFFF">
 
     <ScrollView
@@ -27,7 +27,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toTopOf="@+id/kta1Title"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/logo_dbs" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/kta1Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/kta2Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -129,6 +129,7 @@
                     android:layout_marginBottom="8dp">
 
                     <TextView
+                        android:id="@+id/kta1skb"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10sp"
@@ -137,6 +138,7 @@
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/kta2skb"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40sp"
@@ -588,7 +590,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/kta1Title"
         app:layout_constraintVertical_bias="0.666" />
 
     <TextView
