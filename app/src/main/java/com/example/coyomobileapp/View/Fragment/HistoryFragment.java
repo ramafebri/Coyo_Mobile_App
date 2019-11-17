@@ -31,7 +31,7 @@ public class HistoryFragment extends Fragment  {
     HistoryAdapter historyAdapter;
     RecyclerView recyclerView;
     HistoryViewModel historyViewModel;
-    HistoryView historyView;
+//    HistoryView historyView;
     TextView tvNamaKTA;
 
     public HistoryFragment() {
@@ -45,7 +45,26 @@ public class HistoryFragment extends Fragment  {
         View rootview = inflater.inflate(R.layout.fragment_history, container, false);
 
         recyclerView = rootview.findViewById(R.id.rv_category);
-        historyViewModel = new HistoryViewModel((MainActivity)getActivity());
+        HistoryView historyView = new HistoryView() {
+            @Override
+            public String getNamaKTA() {
+                return tvNamaKTA.getText().toString();
+            }
+
+            @Override
+            public void successGetHistory(List<Ajuan> ajuanList) {
+                historyAdapter = new HistoryAdapter(ajuanList);
+                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                recyclerView.setAdapter(historyAdapter);
+
+            }
+
+            @Override
+            public void failedGetHistory(String message) {
+
+            }
+        };
+        historyViewModel = new HistoryViewModel(historyView);
         historyViewModel.getAllHistory();
         tvNamaKTA = rootview.findViewById(R.id.tvHistory);
 
