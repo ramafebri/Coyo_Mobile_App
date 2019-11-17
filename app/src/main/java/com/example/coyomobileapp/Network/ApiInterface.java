@@ -21,6 +21,9 @@ public interface ApiInterface {
     @GET("all")
     Call<JsonObject> getBarang();
 
+    @GET("pengajuan/history")
+    Call<JsonObject> getHistory();
+
     @GET("Food")
     Call<JsonObject> getBarangById(
             @Query("id") int id
