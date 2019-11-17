@@ -35,7 +35,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         btnBanding.setOnClickListener(this);
         btnAjukan.setOnClickListener(this);
         tv1 = findViewById(R.id.tv11);
-        tv2 = findViewById(R.id.tv2);
         dataBarang = getIntent().getParcelableExtra(Constant.Extra.DATA);
         assert dataBarang != null;
         tvDetailTitle.setText(dataBarang.getTitle());
@@ -55,10 +54,8 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
             startActivity(move);
         }else if(v.getId() == R.id.btnAjukan) {
             Intent move = new Intent(DetailActivity.this, AjukanActivity.class);
+            move.putExtra("title", dataBarang.getTitle());
             startActivity(move);
-        }else if(v.getId() == R.id.tv2){
-            tv2.setVisibility(View.GONE);
-            tv1.setMaxLines(Integer.MAX_VALUE);
         }
         else if(v.getId() == R.id.button14Back){
             Intent move = new Intent(DetailActivity.this, KtaActivity.class);

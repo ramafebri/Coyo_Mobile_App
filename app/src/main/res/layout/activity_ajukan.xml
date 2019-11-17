@@ -41,7 +41,7 @@
         </com.smarteist.autoimageslider.SliderView>
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView14Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -76,7 +76,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.078"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14Title"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
@@ -89,7 +89,7 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/textView14Title" />
 
         <TextView
             android:id="@+id/textView16"

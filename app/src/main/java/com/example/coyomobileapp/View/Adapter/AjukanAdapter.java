@@ -29,21 +29,25 @@ public class AjukanAdapter extends SliderViewAdapter<AjukanAdapter.SliderAdapter
             case 0:
                 Glide.with(viewHolder.itemView)
                         .load("https://images.pexels.com/photos/218983/pexels-photo-218983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+                        .fitCenter()
                         .into(viewHolder.imageViewBackground);
                 break;
             case 1:
                 Glide.with(viewHolder.itemView)
                         .load("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
+                        .fitCenter()
                         .into(viewHolder.imageViewBackground);
                 break;
             case 2:
                 Glide.with(viewHolder.itemView)
                         .load("https://images.pexels.com/photos/929778/pexels-photo-929778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+                        .fitCenter()
                         .into(viewHolder.imageViewBackground);
                 break;
             default:
                 Glide.with(viewHolder.itemView)
                         .load("https://images.pexels.com/photos/218983/pexels-photo-218983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+                        .fitCenter()
                         .into(viewHolder.imageViewBackground);
                 break;
 
@@ -52,7 +56,7 @@ public class AjukanAdapter extends SliderViewAdapter<AjukanAdapter.SliderAdapter
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     public class SliderAdapterVH extends SliderViewAdapter.ViewHolder {

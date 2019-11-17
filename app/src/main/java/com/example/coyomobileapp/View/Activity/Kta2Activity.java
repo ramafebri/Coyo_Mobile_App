@@ -60,4 +60,11 @@ public class Kta2Activity extends AppCompatActivity implements HomeView, KtaList
     public void failedShowBarang(String message) {
         Toast.makeText(this, "Maaf terjadi kesalahan", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent move = new Intent(Kta2Activity.this, MainActivity.class);
+        startActivity(move);
+        finish();
+    }
 }

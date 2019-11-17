@@ -22,7 +22,7 @@ import com.smarteist.autoimageslider.SliderView;
 public class AjukanActivity extends AppCompatActivity implements View.OnClickListener, AjukanView {
     Button btnpengajuan, btnkembali;
     AjukanViewModel ajukanViewModel;
-    TextView tvNama;
+    TextView tvNama, tvtitle;
     EditText etNama, etTempatLahir,etTelepon, etTanggalLahir, etDomisili, etJumlahPinjam, etPenghasilan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,10 @@ public class AjukanActivity extends AppCompatActivity implements View.OnClickLis
         initViewModel();
         initSlider();
         initView();
+
+        tvtitle.setText(getIntent().getStringExtra("title"));
+
+
     }
 
     private void initView(){
@@ -42,9 +46,10 @@ public class AjukanActivity extends AppCompatActivity implements View.OnClickLis
         etDomisili = findViewById(R.id.kota_ajukan);
         etJumlahPinjam = findViewById(R.id.jmlpinjaman_ajukan);
         etPenghasilan = findViewById(R.id.penghasilan_ajukan);
-        tvNama = findViewById(R.id.textView14);
+        tvNama = findViewById(R.id.textView14Title);
         btnkembali = findViewById(R.id.buttonBack);
         btnpengajuan = findViewById(R.id.buttonPengajuan);
+        tvtitle = findViewById(R.id.textView14Title);
         btnkembali.setOnClickListener(this);
         btnpengajuan.setOnClickListener(this);
     }

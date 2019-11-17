@@ -20,14 +20,14 @@
         <activity android:name=".View.Activity.KtaActivity" />
         <activity android:name=".View.Activity.DaftarActivity" />
         <activity android:name=".View.Activity.MainActivity">
+        </activity>
+        <activity android:name=".View.Activity.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".View.Activity.StartActivity"/>
 
 
         <activity android:name=".View.Activity.LoginActivity" />
