@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="8sp"
+    android:paddingTop="8sp"
+    android:paddingEnd="53sp"
+    android:paddingStart="30sp"
+
+        >
     <item>
         <rotate
             android:fromDegrees="-45"

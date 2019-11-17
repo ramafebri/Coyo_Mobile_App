@@ -92,7 +92,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         sendButton = findViewById(R.id.sendButton);
         messageArea = findViewById(R.id.messageArea);
         scrollView = findViewById(R.id.scrollViewChat);
-        btnBack = findViewById(R.id.buttonBack);
+        btnBack = findViewById(R.id.ButtonBack);
         konsultan =  findViewById(R.id.konsultan);
     }
 
@@ -110,10 +110,12 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
 
     public void addMessageBox(String message, int type){
         TextView textView = new TextView(ChatActivity.this);
-        textView.setText("     "+message);
+        textView.setText(message);
 
         LinearLayout.LayoutParams lp2 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        //lp2.weight = 7.0f;
+        lp2.topMargin = 8;
+        lp2.bottomMargin = 8;
+        lp2.weight = 20.0f;
 
         if(type == 1) {
             lp2.gravity = Gravity.START;
@@ -142,7 +144,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                 messageArea.setText("");
             }
         }
-        else if(v.getId() == R.id.buttonBack){
+        else if(v.getId() == R.id.ButtonBack){
             Intent move = new Intent(ChatActivity.this, DraftChatActivity.class);
             startActivity(move);
         }
